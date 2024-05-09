@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="-62dp"
+        tools:layout_editor_absoluteY="45dp">
+    </ImageView>
+
+    <View
+        android:id="@+id/background_cover2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="25dp"
+        android:background="#50000000"
+        android:rotation="-59"
+        android:rotationX="3"
+        android:rotationY="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+    </View>
+
+    <TextView
+        android:id="@+id/textView_Welcomeback"
+        android:layout_width="187dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgMatKhau"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTaiKhoan"
+        app:srcCompat="@drawable/lock" />
+
+    <EditText
+        android:id="@+id/MatKhau"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:width="270dp"
+        android:height="39dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:text="Mật Khẩu"
+        app:layout_constraintStart_toEndOf="@+id/imgMatKhau"
+        app:layout_constraintTop_toBottomOf="@+id/TaiKhoan"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/TaiKhoan"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="168dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tài Khoản"
+        app:layout_constraintStart_toEndOf="@+id/imgTaiKhoan"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Welcomeback" />
+
+    <ImageView
+        android:id="@+id/imgTaiKhoan"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="168dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Welcomeback"
+        app:srcCompat="@drawable/taikhoan" />
+
+    <TextView
+        android:id="@+id/forgotPaswork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:text="Forgot pasword?"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MatKhau" />
+
+    <Button
+        android:id="@+id/Login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="309dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:background="?attr/popupMenuBackground"
+        android:text="Log in"
+        android:backgroundTintMode="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MatKhau" />
+
+    <Button
+        android:id="@+id/Signup"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="309dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/popupMenuBackground"
+        android:backgroundTintMode="@color/white"
+        android:text="Sign up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewor"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="10dp"
+        android:text="or"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="147dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <ProgressBar
+        android:id="@+id/progressBarleft"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="140dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <TextView
+        android:id="@+id/messes"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Welcomeback" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
