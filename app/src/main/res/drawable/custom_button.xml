@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    hình chuwx nhật ractangle-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <size
+                android:height="39dp"
+                android:width="309dp">
+            </size>
+            <gradient
+                android:startColor="#424649"
+                android:endColor="#F8FAF8" />
+            <corners
+                android:radius="10dp"/>
+            <stroke
+                android:color="#F44711"
+                android:width="1dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle">
+            <size
+                android:height="39dp"
+                android:width="309dp">
+            </size>
+            <gradient
+                android:startColor="#424649"
+                android:endColor="#F8FAF8" />
+            <corners
+                android:radius="10dp"/>
+            <stroke
+                android:color="#CECFCC"
+                android:width="1dp"/>
+        </shape>
+    </item>
+</selector>
